@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {Carousel} from 'react-bootstrap';
-import {MenuItem} from 'react-bootstrap';
-import {Nav} from 'react-bootstrap';
-import {Navbar} from 'react-bootstrap';
-import {NavDropdown} from 'react-bootstrap';
-import {NavItem} from 'react-bootstrap';
+import { Carousel, MenuItem, Nav, Navbar, NavDropdown, NavItem } from 'react-bootstrap';
 
 
 class App extends Component {
@@ -53,29 +48,29 @@ class App extends Component {
             </NavDropdown>
           </Nav>
         </Navbar>
-      <Carousel className="pa-carousel">
-        <Carousel.Item>
-          <img width={960} height={350} alt="960x350" src="http://www.cfccpaloalto.org/wp-content/uploads/2018/05/pic-e1527315715403-960x350.jpg" />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img width={960} height={350} alt="960x350" src="http://www.cfccpaloalto.org/wp-content/uploads/2018/08/1-960x350.jpg" />
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img width={960} height={350} alt="960x350" src="http://www.cfccpaloalto.org/wp-content/uploads/2018/08/3-960x350.jpg" />
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+        <Carousel className="pa-carousel">
+          <Carousel.Item>
+            <img width={960} height={350} alt="960x350" src="http://www.cfccpaloalto.org/wp-content/uploads/2018/05/pic-e1527315715403-960x350.jpg" />
+            <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img width={960} height={350} alt="960x350" src="http://www.cfccpaloalto.org/wp-content/uploads/2018/08/1-960x350.jpg" />
+            <Carousel.Caption>
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img width={960} height={350} alt="960x350" src="http://www.cfccpaloalto.org/wp-content/uploads/2018/08/3-960x350.jpg" />
+            <Carousel.Caption>
+              <h3>Third slide label</h3>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
 
       </div>
     );
