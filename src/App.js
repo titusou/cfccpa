@@ -99,7 +99,6 @@ class App extends Component {
                         <Route path="/chinese" render={() => 'chinese'} />
                     </div>
                 </Router>
-                <i class="fa fa-facebook-official" aria-hidden="true" />
             </div>
         );
     }
