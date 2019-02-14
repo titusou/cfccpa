@@ -1,0 +1,35 @@
+.contact-items {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 50px; */
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 850px;
+}
+
+.contact-box {
+    cursor: pointer;
+    margin: 10px;
+    width: 280px;
+    text-align: center;
+}
+
+.contact-box:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.contact-icon-facebook {
+    color: rgba(35, 71, 128, 1);
+}
+
+.contact-icon-mailto {
+    color: rgba(212, 70, 56, 1);
+}
+
+.contact-icon-tel {
+    color: rgba(52, 218, 79, 1);
+}
+
+.logo-text {
+    font-weight: bold;
+}

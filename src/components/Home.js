@@ -43,7 +43,6 @@ class Home extends Component {
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
-                <i class="fa fa-facebook-official" aria-hidden="true" />
             </div>
         );
     }
