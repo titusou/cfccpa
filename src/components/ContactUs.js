@@ -7,7 +7,6 @@ class ContactUs extends Component {
         <div
           className="contact-box"
           onClick={() => {
-            this.setState({ fbClick: true });
             window.open("https://www.facebook.com/cfccpa/");
           }}
         >
