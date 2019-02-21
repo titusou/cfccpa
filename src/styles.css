@@ -1,3 +1,14 @@
+.home {
+    display: flex;
+    justify-content: center;
+}
+
+.home-theme {
+    display: block;
+    max-height: 800px;
+    max-width: 100%;
+}
+
 .contact-items {
     display: flex;
     justify-content: space-between;
