@@ -1,6 +1,17 @@
+.navbar {
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 0;
+}
+
+.navbar-brand > img {
+    height: 100%;
+}
+
 .home {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .home-theme {
@@ -46,7 +57,7 @@
 
 .staff-title {
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 300;
     margin-bottom: 10px;
     text-align: center;
     width: 100%;

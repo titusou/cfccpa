@@ -7,78 +7,84 @@ import 'typeface-roboto';
 import ContactUs from './components/ContactUs';
 import Home from './components/Home';
 import Staff from './components/Staff';
+import paLogo from './assets/pa-logo.png';
 import './styles.css';
 
 class App extends Component {
     render() {
         return (
             <div className="App">
-                <Navbar>
+                <Navbar fluid>
                     <Navbar.Header>
                         <Navbar.Brand>
-                            <a href="http://localhost:3000/">CFCCPA</a>
+                            <a href="/">
+                                <img alt="logo" src={paLogo} />
+                            </a>
                         </Navbar.Brand>
+                        <Navbar.Toggle />
                     </Navbar.Header>
-                    <Nav>
-                        <NavDropdown eventKey={1} title="About Us" id="basic-nav-dropdown">
-                            <MenuItem eventKey={1.1} href="/mission/">
-                                Mission
-                            </MenuItem>
-                            <MenuItem eventKey={1.2} href="/faith/">
-                                Faith
-                            </MenuItem>
-                            <MenuItem eventKey={1.3} href="/sunday-schedule/">
-                                Sunday Schedule
-                            </MenuItem>
-                            <MenuItem eventKey={1.4} href="/staff/">
-                                Staff
-                            </MenuItem>
-                        </NavDropdown>
-                        <NavItem eventKey={2} href="/contact-us/">
-                            Contact Us
-                        </NavItem>
-                        <NavDropdown eventKey={3} title="Church Life" id="basic-nav-dropdown">
-                            <MenuItem eventKey={3.1} href="/fellowship-groups">
-                                Fellowship Groups
-                            </MenuItem>
-                            <MenuItem eventKey={3.3} href="/baptism">
-                                Baptism
-                            </MenuItem>
-                            <MenuItem eventKey={3.4} href="/bible-study">
-                                Bible Study
-                            </MenuItem>
-                        </NavDropdown>
-                        <NavDropdown eventKey={4} title="Message" id="basic-nav-dropdown">
-                            <MenuItem eventKey={4.1} href="/sunday-sermon">
-                                Sunday Sermon
-                            </MenuItem>
-                            <MenuItem eventKey={4.2} href="/sunday-school">
-                                Sunday School
-                            </MenuItem>
-                        </NavDropdown>
-                        <NavDropdown eventKey={5} title="Community Service" id="basic-nav-dropdown">
-                            <MenuItem eventKey={5.1} href="/citizenship-class">
-                                Citizenship Class
-                            </MenuItem>
-                            <MenuItem eventKey={5.2} href="/english-class">
-                                English Class
-                            </MenuItem>
-                            <MenuItem eventKey={5.3} href="/soul-food">
-                                Soul Food
-                            </MenuItem>
-                            <MenuItem eventKey={5.4} href="/chinese-treatment">
-                                Chinese Treatment
-                            </MenuItem>
-                        </NavDropdown>
-                        <NavDropdown eventKey={6} title="English" id="basic-nav-dropdown">
-                            <MenuItem eventKey={6.1} href="/english">
-                                English
-                            </MenuItem>
-                            <MenuItem eventKey={6.2} href="/chinese">
-                                Chinese
-                            </MenuItem>
-                        </NavDropdown>
-                    </Nav>
+                    <Navbar.Collapse>
+                        <Nav pullRight>
+                            <NavDropdown eventKey={1} title="About Us" id="basic-nav-dropdown">
+                                <MenuItem eventKey={1.1} href="/mission/">
+                                    Mission
+                                </MenuItem>
+                                <MenuItem eventKey={1.2} href="/faith/">
+                                    Faith
+                                </MenuItem>
+                                <MenuItem eventKey={1.3} href="/sunday-schedule/">
+                                    Sunday Schedule
+                                </MenuItem>
+                                <MenuItem eventKey={1.4} href="/staff/">
+                                    Staff
+                                </MenuItem>
+                            </NavDropdown>
+                            <NavItem eventKey={2} href="/contact-us/">
+                                Contact Us
+                            </NavItem>
+                            <NavDropdown eventKey={3} title="Church Life" id="basic-nav-dropdown">
+                                <MenuItem eventKey={3.1} href="/fellowship-groups">
+                                    Fellowship Groups
+                                </MenuItem>
+                                <MenuItem eventKey={3.3} href="/baptism">
+                                    Baptism
+                                </MenuItem>
+                                <MenuItem eventKey={3.4} href="/bible-study">
+                                    Bible Study
+                                </MenuItem>
+                            </NavDropdown>
+                            <NavDropdown eventKey={4} title="Message" id="basic-nav-dropdown">
+                                <MenuItem eventKey={4.1} href="/sunday-sermon">
+                                    Sunday Sermon
+                                </MenuItem>
+                                <MenuItem eventKey={4.2} href="/sunday-school">
+                                    Sunday School
+                                </MenuItem>
+                            </NavDropdown>
+                            <NavDropdown eventKey={5} title="Community Service" id="basic-nav-dropdown">
+                                <MenuItem eventKey={5.1} href="/citizenship-class">
+                                    Citizenship Class
+                                </MenuItem>
+                                <MenuItem eventKey={5.2} href="/english-class">
+                                    English Class
+                                </MenuItem>
+                                <MenuItem eventKey={5.3} href="/soul-food">
+                                    Soul Food
+                                </MenuItem>
+                                <MenuItem eventKey={5.4} href="/chinese-treatment">
+                                    Chinese Treatment
+                                </MenuItem>
+                            </NavDropdown>
+                            <NavDropdown eventKey={6} title="English" id="basic-nav-dropdown">
+                                <MenuItem eventKey={6.1} href="/english">
+                                    English
+                                </MenuItem>
+                                <MenuItem eventKey={6.2} href="/chinese">
+                                    Chinese
+                                </MenuItem>
+                            </NavDropdown>
+                        </Nav>
+                    </Navbar.Collapse>
                 </Navbar>
                 <Router>
                     <div>

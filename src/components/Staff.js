@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Jumbotron } from 'react-bootstrap';
 import { Button, Card, CardActions, CardContent, CardMedia } from '@material-ui/core';
 import { Email, Call } from '@material-ui/icons';
 
@@ -32,7 +33,9 @@ class Staff extends Component {
     render() {
         return (
             <div>
-                <div className="staff-title">Our Leadership Team</div>
+                <Jumbotron>
+                    <div className="staff-title">The Community Staff</div>
+                </Jumbotron>
                 <div className="staff-cards">
                     {this.renderCard('Pastor Steve Cheng', steveCheng, 'yichunsteve@cfccpaloalto.org', '4087817028')}
                     {this.renderCard('Minister John Zhou', johnZhou)}
