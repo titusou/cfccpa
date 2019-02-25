@@ -84,6 +84,10 @@
     font-size: 20px;
 }
 
+.staff-card-description {
+    margin-top: 10px;
+}
+
 .staff-card-actions {
     display: flex;
     justify-content: center;
