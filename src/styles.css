@@ -1,6 +1,17 @@
+.navbar {
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 0;
+}
+
+.navbar-brand > img {
+    height: 100%;
+}
+
 .home {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .home-theme {
@@ -42,4 +53,42 @@
 
 .logo-text {
     font-weight: bold;
+}
+
+.staff-title {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.staff-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.staff-card {
+    margin: 20px;
+    min-width: 300px;
+    width: 350px;
+}
+
+.staff-card-img {
+    height: 180px;
+    object-fit: cover;
+}
+
+.staff-card-name {
+    font-size: 20px;
+}
+
+.staff-card-description {
+    margin-top: 10px;
+}
+
+.staff-card-actions {
+    display: flex;
+    justify-content: center;
 }
