@@ -8,7 +8,8 @@
     height: 100%;
 }
 
-.home {
+.home,
+.sermons {
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -91,4 +92,45 @@
 .staff-card-actions {
     display: flex;
     justify-content: center;
+}
+
+.sermon-video-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.sermon-video-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sermon-video {
+    height: 360px;
+    width: 640px;
+}
+
+@media (max-width: 575.98px) {
+    .sermon-video {
+        height: 180px;
+        width: 320px;
+    }
+}
+
+.sermon-video-description {
+    margin: 20px;
+    max-width: 1040px;
+}
+
+.sermon-video-description-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.sermon-video-description-verse {
+    font-size: 12px;
+    font-style: italic;
 }
