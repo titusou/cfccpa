@@ -6,7 +6,7 @@ import 'typeface-roboto';
 
 import ContactUs from './components/ContactUs';
 import Home from './components/Home';
-import SermonVideo from './components/SermonVideo';
+import Sermons from './components/Sermons';
 import Staff from './components/Staff';
 import paLogo from './assets/pa-logo.png';
 import './styles.css';
@@ -89,7 +89,7 @@ class App extends Component {
                         <Route path="/contact-us" component={ContactUs} />
                         <Route path="/english-class" render={() => 'english class'} />
                         <Route path="/fellowship-groups" render={() => 'fellowship groups'} />
-                        <Route path="/sermons" component={SermonVideo} />
+                        <Route path="/sermons" component={Sermons} />
                         <Route path="/serve" render={() => 'serve'} />
                         <Route path="/soul-food" render={() => 'soul food'} />
                         <Route path="/staff" component={Staff} />
