@@ -6,6 +6,7 @@ import 'typeface-roboto';
 
 import ContactUs from './components/ContactUs';
 import Home from './components/Home';
+import Sermons from './components/Sermons';
 import Staff from './components/Staff';
 import paLogo from './assets/pa-logo.png';
 import './styles.css';
@@ -25,62 +26,54 @@ class App extends Component {
                     </Navbar.Header>
                     <Navbar.Collapse>
                         <Nav pullRight>
-                            <NavDropdown eventKey={1} title="About Us" id="basic-nav-dropdown">
-                                <MenuItem eventKey={1.1} href="/mission/">
-                                    Mission
+                            <NavDropdown eventKey={1} id="basic-nav-dropdown" noCaret title="Learn">
+                                <MenuItem eventKey={1.1} href="/sermons">
+                                    Sermons
                                 </MenuItem>
-                                <MenuItem eventKey={1.2} href="/faith/">
-                                    Faith
-                                </MenuItem>
-                                <MenuItem eventKey={1.3} href="/sunday-schedule/">
-                                    Sunday Schedule
-                                </MenuItem>
-                                <MenuItem eventKey={1.4} href="/staff/">
-                                    Staff
-                                </MenuItem>
-                            </NavDropdown>
-                            <NavItem eventKey={2} href="/contact-us/">
-                                Contact Us
-                            </NavItem>
-                            <NavDropdown eventKey={3} title="Church Life" id="basic-nav-dropdown">
-                                <MenuItem eventKey={3.1} href="/fellowship-groups">
-                                    Fellowship Groups
-                                </MenuItem>
-                                <MenuItem eventKey={3.3} href="/baptism">
-                                    Baptism
-                                </MenuItem>
-                                <MenuItem eventKey={3.4} href="/bible-study">
-                                    Bible Study
-                                </MenuItem>
-                            </NavDropdown>
-                            <NavDropdown eventKey={4} title="Message" id="basic-nav-dropdown">
-                                <MenuItem eventKey={4.1} href="/sunday-sermon">
-                                    Sunday Sermon
-                                </MenuItem>
-                                <MenuItem eventKey={4.2} href="/sunday-school">
+                                <MenuItem eventKey={1.2} href="/sunday-school">
                                     Sunday School
                                 </MenuItem>
                             </NavDropdown>
-                            <NavDropdown eventKey={5} title="Community Service" id="basic-nav-dropdown">
-                                <MenuItem eventKey={5.1} href="/citizenship-class">
+                            <NavDropdown eventKey={2} id="basic-nav-dropdown" noCaret title="Grow">
+                                <MenuItem eventKey={2.1} href="/fellowship-groups">
+                                    Fellowship Groups
+                                </MenuItem>
+                                <MenuItem eventKey={2.3} href="/baptism">
+                                    Baptism
+                                </MenuItem>
+                                <MenuItem eventKey={2.4} href="/bible-study">
+                                    Bible Study
+                                </MenuItem>
+                            </NavDropdown>
+                            <NavItem eventKey={3} href="/serve">
+                                Serve
+                            </NavItem>
+                            <NavDropdown eventKey={4} id="basic-nav-dropdown" noCaret title="Ministries">
+                                <MenuItem eventKey={4.1} href="/citizenship-class">
                                     Citizenship Class
                                 </MenuItem>
-                                <MenuItem eventKey={5.2} href="/english-class">
+                                <MenuItem eventKey={4.2} href="/english-class">
                                     English Class
                                 </MenuItem>
-                                <MenuItem eventKey={5.3} href="/soul-food">
+                                <MenuItem eventKey={4.3} href="/soul-food">
                                     Soul Food
                                 </MenuItem>
-                                <MenuItem eventKey={5.4} href="/chinese-treatment">
+                                <MenuItem eventKey={4.4} href="/chinese-treatment">
                                     Chinese Treatment
                                 </MenuItem>
                             </NavDropdown>
-                            <NavDropdown eventKey={6} title="English" id="basic-nav-dropdown">
-                                <MenuItem eventKey={6.1} href="/english">
-                                    English
+                            <NavDropdown eventKey={5} id="basic-nav-dropdown" noCaret title="About Us">
+                                <MenuItem eventKey={5.1} href="/values">
+                                    Values
                                 </MenuItem>
-                                <MenuItem eventKey={6.2} href="/chinese">
-                                    Chinese
+                                <MenuItem eventKey={5.3} href="/sunday-schedule">
+                                    Sunday Schedule
+                                </MenuItem>
+                                <MenuItem eventKey={5.4} href="/staff">
+                                    Staff
+                                </MenuItem>
+                                <MenuItem eventKey={5.5} href="/contact-us">
+                                    Contact Us
                                 </MenuItem>
                             </NavDropdown>
                         </Nav>
@@ -89,22 +82,20 @@ class App extends Component {
                 <Router>
                     <div>
                         <Route exact path="/" component={Home} />
-                        <Route path="/mission" render={() => 'mission'} />
-                        <Route path="/faith" render={() => 'faith'} />
-                        <Route path="/sunday-schedule" render={() => 'sunday schedule'} />
-                        <Route path="/staff" component={Staff} />
-                        <Route path="/contact-us" component={ContactUs} />
-                        <Route path="/fellowship-groups" render={() => 'fellowship groups'} />
                         <Route path="/baptism" render={() => 'baptism'} />
                         <Route path="/bible-study" render={() => 'bible study'} />
-                        <Route path="/sunday-sermon" render={() => 'sunday sermon'} />
-                        <Route path="/sunday-school" render={() => 'sunday school'} />
-                        <Route path="/citizenship-class" render={() => 'citizenship class'} />
-                        <Route path="/english-class" render={() => 'english class'} />
-                        <Route path="/soul-food" render={() => 'soul food'} />
                         <Route path="/chinese-treatment" render={() => 'chinese treatment'} />
-                        <Route path="/english" render={() => 'english'} />
-                        <Route path="/chinese" render={() => 'chinese'} />
+                        <Route path="/citizenship-class" render={() => 'citizenship class'} />
+                        <Route path="/contact-us" component={ContactUs} />
+                        <Route path="/english-class" render={() => 'english class'} />
+                        <Route path="/fellowship-groups" render={() => 'fellowship groups'} />
+                        <Route path="/sermons" component={Sermons} />
+                        <Route path="/serve" render={() => 'serve'} />
+                        <Route path="/soul-food" render={() => 'soul food'} />
+                        <Route path="/staff" component={Staff} />
+                        <Route path="/sunday-schedule" render={() => 'sunday schedule'} />
+                        <Route path="/sunday-school" render={() => 'sunday school'} />
+                        <Route path="/values" render={() => 'values'} />
                     </div>
                 </Router>
             </div>
