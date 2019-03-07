@@ -47,7 +47,7 @@ class App extends Component {
                                         Bible Study
                                     </MenuItem>
                                 </NavDropdown>
-                                <NavItem eventKey={3} href="/serve">
+                                <NavItem eventKey={3} href="/serve" id="basic-nav">
                                     Serve
                                 </NavItem>
                                 <NavDropdown eventKey={4} id="basic-nav-dropdown" noCaret title="Ministries">
