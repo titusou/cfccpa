@@ -82,27 +82,25 @@ class App extends Component {
                         </Navbar.Collapse>
                     </Navbar>
                 </div>
-                <div className="content">
-                    <Router>
-                        <div>
-                            <Route exact path="/" component={Home} />
-                            <Route path="/baptism" render={() => 'baptism'} />
-                            <Route path="/bible-study" render={() => 'bible study'} />
-                            <Route path="/chinese-treatment" render={() => 'chinese treatment'} />
-                            <Route path="/citizenship-class" render={() => 'citizenship class'} />
-                            <Route path="/contact-us" component={ContactUs} />
-                            <Route path="/english-class" render={() => 'english class'} />
-                            <Route path="/fellowship-groups" render={() => 'fellowship groups'} />
-                            <Route path="/sermons" component={Sermons} />
-                            <Route path="/serve" render={() => 'serve'} />
-                            <Route path="/soul-food" render={() => 'soul food'} />
-                            <Route path="/staff" component={Staff} />
-                            <Route path="/sunday-schedule" render={() => 'sunday schedule'} />
-                            <Route path="/sunday-school" render={() => 'sunday school'} />
-                            <Route path="/values" component={Values} />
-                        </div>
-                    </Router>
-                </div>
+                <Router>
+                    <div className="content">
+                        <Route exact path="/" component={Home} />
+                        <Route path="/baptism" render={() => 'baptism'} />
+                        <Route path="/bible-study" render={() => 'bible study'} />
+                        <Route path="/chinese-treatment" render={() => 'chinese treatment'} />
+                        <Route path="/citizenship-class" render={() => 'citizenship class'} />
+                        <Route path="/contact-us" component={ContactUs} />
+                        <Route path="/english-class" render={() => 'english class'} />
+                        <Route path="/fellowship-groups" render={() => 'fellowship groups'} />
+                        <Route path="/sermons" component={Sermons} />
+                        <Route path="/serve" render={() => 'serve'} />
+                        <Route path="/soul-food" render={() => 'soul food'} />
+                        <Route path="/staff" component={Staff} />
+                        <Route path="/sunday-schedule" render={() => 'sunday schedule'} />
+                        <Route path="/sunday-school" render={() => 'sunday school'} />
+                        <Route path="/values" component={Values} />
+                    </div>
+                </Router>
             </div>
         );
     }
