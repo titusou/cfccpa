@@ -1,5 +1,10 @@
+.App {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
 .navbar {
-    background-color: transparent;
+    background-color: white;
     border-color: transparent;
     margin-bottom: 0;
 }
@@ -133,4 +138,56 @@
 .sermon-video-description-verse {
     font-size: 12px;
     font-style: italic;
+}
+
+.values-page {
+    height: 100%;
+}
+
+.values-title-block {
+    align-items: center;
+    background-image: url('./assets/fellowship-hall-group-blur.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 260px;
+    justify-content: center;
+    width: 100%;
+}
+
+.values-title {
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.8) 1px 1px;
+}
+
+.values-section {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 30px 15px 15px;
+}
+
+.values-section-title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.values-section-text {
+    margin: 0 15px;
+}
+
+.values-section-list-item {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.values-section-list-item-light {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+    margin: 5px 0;
 }
