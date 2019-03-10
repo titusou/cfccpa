@@ -2,6 +2,7 @@
     --cfcc-header-height: 50px;
     --cfcc-blue: #6a85b6;
     --cfcc-light-blue: #bac8e0;
+    --cfcc-header-blue: #506ca1;
 }
 
 .App {
@@ -36,10 +37,53 @@
     margin-top: 10px;
 }
 
-.home-theme {
-    display: block;
+.home-grid {
+    max-width: 1080px;
+}
+
+.home-card-title {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.home-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+}
+
+.home-theme-container {
+    width: fit-content;
+}
+
+.home-theme-img {
     max-height: 800px;
     max-width: 100%;
+}
+
+.home-sermon-header {
+    font-size: 18px;
+    width: 100%;
+}
+
+.home-sermon-header-speaker {
+    font-weight: 600;
+}
+
+.home-sermon-block {
+    color: var(--cfcc-header-blue);
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.home-sermon-actions {
+    margin-top: 20px;
+    width: 100%;
 }
 
 .contact-items {
