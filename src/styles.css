@@ -5,6 +5,10 @@
     --cfcc-header-blue: #506ca1;
 }
 
+.mr-5 {
+    margin-right: 5px;
+}
+
 .App {
     display: grid;
     grid-template-rows: var(--cfcc-header-height) 1fr;
@@ -76,7 +80,7 @@
 .home-sermon-block {
     color: var(--cfcc-header-blue);
     font-size: 48px;
-    font-weight: 600;
+    font-weight: bold;
     margin-top: 20px;
     width: 100%;
 }
@@ -84,6 +88,31 @@
 .home-sermon-actions {
     margin-top: 20px;
     width: 100%;
+}
+
+.grow-header {
+    color: white;
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    min-width: 320px;
+    padding: 30px;
+    width: 100%;
+}
+
+.grow-header-text-lg {
+    font-size: 56px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.grow-header-text-sm {
+    padding-left: 90px;
+    text-shadow: 0 0 1px gray;
+}
+
+.grow-header-text-keyword {
+    font-weight: bold;
 }
 
 .contact-items {
@@ -132,6 +161,7 @@
     width: 100%;
 }
 
+.grow-header,
 .staff-title-block {
     background: var(--cfcc-blue); /* fallback for old browsers */
     background: -webkit-linear-gradient(
@@ -154,27 +184,32 @@
     text-shadow: rgba(0, 0, 0, 0.8) 1px 1px;
 }
 
+.grow-cards,
 .staff-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+.grow-card,
 .staff-card {
     margin: 20px;
     min-width: 300px;
     width: 350px;
 }
 
+.grow-card-img,
 .staff-card-img {
     height: 180px;
     object-fit: cover;
 }
 
+.grow-card-name,
 .staff-card-name {
     font-size: 20px;
 }
 
+.grow-card-description,
 .staff-card-description {
     margin-top: 10px;
 }
@@ -182,6 +217,12 @@
 .staff-card-actions {
     display: flex;
     justify-content: center;
+}
+
+.grow-title {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 60px 20px 0;
 }
 
 .sermon-video-container {
@@ -193,7 +234,8 @@
 }
 
 .sermon-video-header {
-    font-size: 24px;
+    font-size: 36px;
+    font-weight: 500;
     margin-bottom: 20px;
     text-align: center;
 }

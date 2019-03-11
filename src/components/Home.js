@@ -22,7 +22,10 @@ class Home extends Component {
                                 Watch the latest sermon by{' '}
                                 <span className="home-sermon-header-speaker">Steve Cheng</span>
                             </div>
-                            <div className="home-sermon-block">全心全意愛你的家</div>
+                            <div className="home-sermon-block">
+                                <div>全心全意</div>
+                                <div>愛你的家</div>
+                            </div>
                             <div className="home-sermon-actions">
                                 <Button href="/sermons" size="large" variant="outlined">
                                     <PlayArrow />
