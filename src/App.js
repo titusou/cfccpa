@@ -5,6 +5,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import 'typeface-roboto';
 
 import ContactUs from './components/ContactUs';
+import Grow from './components/Grow';
 import Home from './components/Home';
 import Sermons from './components/Sermons';
 import Staff from './components/Staff';
@@ -36,17 +37,9 @@ class App extends Component {
                                         Sunday School
                                     </MenuItem>
                                 </NavDropdown>
-                                <NavDropdown eventKey={2} id="basic-nav-dropdown" noCaret title="Grow">
-                                    <MenuItem eventKey={2.1} href="/fellowship-groups">
-                                        Fellowship Groups
-                                    </MenuItem>
-                                    <MenuItem eventKey={2.3} href="/baptism">
-                                        Baptism
-                                    </MenuItem>
-                                    <MenuItem eventKey={2.4} href="/bible-study">
-                                        Bible Study
-                                    </MenuItem>
-                                </NavDropdown>
+                                <NavItem eventKey={2} href="/grow" id="basic-nav">
+                                    Grow
+                                </NavItem>
                                 <NavItem eventKey={3} href="/serve" id="basic-nav">
                                     Serve
                                 </NavItem>
@@ -85,13 +78,11 @@ class App extends Component {
                 <Router>
                     <div className="content">
                         <Route exact path="/" component={Home} />
-                        <Route path="/baptism" render={() => 'baptism'} />
-                        <Route path="/bible-study" render={() => 'bible study'} />
                         <Route path="/chinese-treatment" render={() => 'chinese treatment'} />
                         <Route path="/citizenship-class" render={() => 'citizenship class'} />
                         <Route path="/contact-us" component={ContactUs} />
                         <Route path="/english-class" render={() => 'english class'} />
-                        <Route path="/fellowship-groups" render={() => 'fellowship groups'} />
+                        <Route path="/grow" component={Grow} />
                         <Route path="/sermons" component={Sermons} />
                         <Route path="/serve" render={() => 'serve'} />
                         <Route path="/soul-food" render={() => 'soul food'} />
