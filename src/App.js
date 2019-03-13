@@ -9,12 +9,37 @@ import Grow from './components/Grow';
 import Home from './components/Home';
 import Sermons from './components/Sermons';
 import Staff from './components/Staff';
+import SundaySchool from './components/SundaySchool';
 import Values from './components/Values';
 import paLogo from './assets/pa-logo.png';
 import './styles.css';
 
 class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { isLearnMenuItemOpen: false, isMinistriesMenuItemOpen: false, isAboutUsMenuItemOpen: false };
+    }
+
+    handleLearnMenuItemOpen = () => {
+        this.setState({ isLearnMenuItemOpen: true });
+    };
+
+    handleMinistriesMenuItemOpen = () => {
+        this.setState({ isMinistriesMenuItemOpen: true });
+    };
+
+    handleAboutUsMenuItemOpen = () => {
+        this.setState({ isAboutUsMenuItemOpen: true });
+    };
+
+    handleMenuItemClose = () => {
+        this.setState({ isLearnMenuItemOpen: false, isMinistriesMenuItemOpen: false, isAboutUsMenuItemOpen: false });
+    };
+
     render() {
+        console.log('state: ', this.state);
+        console.log('isLearnMenuItemOpen: ', this.state.isLearnMenuItemOpen);
+        console.log('isMinistriesMenuItemOpen: ', this.state.isMinistriesMenuItemOpen);
         return (
             <div className="App">
                 <div>
@@ -29,7 +54,14 @@ class App extends Component {
                         </Navbar.Header>
                         <Navbar.Collapse>
                             <Nav pullRight>
-                                <NavDropdown eventKey={1} id="basic-nav-dropdown" noCaret title="Learn">
+                                <NavDropdown
+                                    eventKey={1}
+                                    title="Learn"
+                                    id="basic-nav"
+                                    onMouseEnter={this.handleLearnMenuItemOpen}
+                                    onMouseLeave={this.handleMenuItemClose}
+                                    open={this.state.isLearnMenuItemOpen}
+                                >
                                     <MenuItem eventKey={1.1} href="/sermons">
                                         Sermons
                                     </MenuItem>
@@ -43,7 +75,14 @@ class App extends Component {
                                 <NavItem eventKey={3} href="/serve" id="basic-nav">
                                     Serve
                                 </NavItem>
-                                <NavDropdown eventKey={4} id="basic-nav-dropdown" noCaret title="Ministries">
+                                <NavDropdown
+                                    eventKey={4}
+                                    title="Ministries"
+                                    id="basic-nav"
+                                    onMouseEnter={this.handleMinistriesMenuItemOpen}
+                                    onMouseLeave={this.handleMenuItemClose}
+                                    open={this.state.isMinistriesMenuItemOpen}
+                                >
                                     <MenuItem eventKey={4.1} href="/citizenship-class">
                                         Citizenship Class
                                     </MenuItem>
@@ -57,7 +96,14 @@ class App extends Component {
                                         Chinese Treatment
                                     </MenuItem>
                                 </NavDropdown>
-                                <NavDropdown eventKey={5} id="basic-nav-dropdown" noCaret title="About Us">
+                                <NavDropdown
+                                    eventKey={5}
+                                    title="About Us"
+                                    id="basic-nav"
+                                    onMouseEnter={this.handleAboutUsMenuItemOpen}
+                                    onMouseLeave={this.handleMenuItemClose}
+                                    open={this.state.isAboutUsMenuItemOpen}
+                                >
                                     <MenuItem eventKey={5.1} href="/values">
                                         Values
                                     </MenuItem>
@@ -88,7 +134,7 @@ class App extends Component {
                         <Route path="/soul-food" render={() => 'soul food'} />
                         <Route path="/staff" component={Staff} />
                         <Route path="/sunday-schedule" render={() => 'sunday schedule'} />
-                        <Route path="/sunday-school" render={() => 'sunday school'} />
+                        <Route path="/sunday-school" component={SundaySchool} />
                         <Route path="/values" component={Values} />
                     </div>
                 </Router>

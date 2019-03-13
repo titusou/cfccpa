@@ -150,7 +150,9 @@
     font-weight: bold;
 }
 
+.contact-us-title-block,
 .staff-title-block,
+.sunday-school-title-block,
 .values-title-block {
     align-items: center;
     background-position: center;
@@ -162,7 +164,8 @@
 }
 
 .grow-header,
-.staff-title-block {
+.staff-title-block,
+.sunday-school-title-block {
     background: var(--cfcc-blue); /* fallback for old browsers */
     background: -webkit-linear-gradient(
         to right,
@@ -176,7 +179,9 @@
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.staff-title {
+.contact-us-title,
+.staff-title,
+.sunday-school-title {
     color: white;
     font-size: 50px;
     font-weight: 600;
