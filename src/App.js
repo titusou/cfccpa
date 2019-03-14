@@ -37,9 +37,6 @@ class App extends Component {
     };
 
     render() {
-        console.log('state: ', this.state);
-        console.log('isLearnMenuItemOpen: ', this.state.isLearnMenuItemOpen);
-        console.log('isMinistriesMenuItemOpen: ', this.state.isMinistriesMenuItemOpen);
         return (
             <div className="App">
                 <div>
