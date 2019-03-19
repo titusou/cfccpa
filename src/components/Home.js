@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Button, Grid, Paper } from '@material-ui/core';
 import { PlayArrow } from '@material-ui/icons';
 
+import sundaySchoolApril from '../assets/sunday-school-april.png';
 import theme from '../assets/theme.png';
 
 class Home extends Component {
@@ -32,6 +33,20 @@ class Home extends Component {
                                     WATCH
                                 </Button>
                             </div>
+                        </div>
+                    </Grid>
+                    <div className="home-sunday-school-title">
+                        <span className="home-sunday-school-title-month">April</span> Sunday School
+                    </div>
+                    <Grid item sm={6}>
+                        <div className="home-section">
+                            <Paper square>
+                                <img
+                                    alt="Sunday School in April with Dr. Patrick Hunt"
+                                    className="home-sunday-school-img"
+                                    src={sundaySchoolApril}
+                                />
+                            </Paper>
                         </div>
                     </Grid>
                 </Grid>

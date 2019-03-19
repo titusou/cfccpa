@@ -7,8 +7,10 @@ import 'typeface-roboto';
 import ContactUs from './components/ContactUs';
 import Grow from './components/Grow';
 import Home from './components/Home';
+import Ministries from './components/Ministries';
 import Sermons from './components/Sermons';
 import Staff from './components/Staff';
+import SundaySchedule from './components/SundaySchedule';
 import SundaySchool from './components/SundaySchool';
 import Values from './components/Values';
 import paLogo from './assets/pa-logo.png';
@@ -75,30 +77,9 @@ class App extends Component {
                                 <NavItem eventKey={3} href="/serve" id="basic-nav">
                                     Serve
                                 </NavItem>
-                                <NavDropdown
-                                    eventKey={4}
-                                    title="Ministries"
-                                    id="basic-nav"
-                                    onMouseEnter={this.handleMinistriesMenuItemOpen}
-                                    onMouseLeave={this.handleMenuItemClose}
-                                    onToggle={isOpen =>
-                                        isOpen ? this.handleMinistriesMenuItemOpen : this.handleMenuItemClose
-                                    }
-                                    open={this.state.isMinistriesMenuItemOpen}
-                                >
-                                    <MenuItem eventKey={4.1} href="/citizenship-class">
-                                        Citizenship Class
-                                    </MenuItem>
-                                    <MenuItem eventKey={4.2} href="/english-class">
-                                        English Class
-                                    </MenuItem>
-                                    <MenuItem eventKey={4.3} href="/soul-food">
-                                        Soul Food
-                                    </MenuItem>
-                                    <MenuItem eventKey={4.4} href="/chinese-treatment">
-                                        Chinese Treatment
-                                    </MenuItem>
-                                </NavDropdown>
+                                <NavItem eventKey={4} href="/ministries" id="basic-nav">
+                                    Ministries
+                                </NavItem>
                                 <NavDropdown
                                     eventKey={5}
                                     title="About Us"
@@ -113,8 +94,8 @@ class App extends Component {
                                     <MenuItem eventKey={5.1} href="/values">
                                         Values
                                     </MenuItem>
-                                    <MenuItem eventKey={5.3} href="/sunday-schedule">
-                                        Sunday Schedule
+                                    <MenuItem eventKey={5.3} href="/sundays">
+                                        Sundays
                                     </MenuItem>
                                     <MenuItem eventKey={5.4} href="/staff">
                                         Staff
@@ -130,16 +111,13 @@ class App extends Component {
                 <Router>
                     <div className="content">
                         <Route exact path="/" component={Home} />
-                        <Route path="/chinese-treatment" render={() => 'chinese treatment'} />
-                        <Route path="/citizenship-class" render={() => 'citizenship class'} />
                         <Route path="/contact-us" component={ContactUs} />
-                        <Route path="/english-class" render={() => 'english class'} />
                         <Route path="/grow" component={Grow} />
+                        <Route path="/ministries" component={Ministries} />
                         <Route path="/sermons" component={Sermons} />
                         <Route path="/serve" render={() => 'serve'} />
-                        <Route path="/soul-food" render={() => 'soul food'} />
                         <Route path="/staff" component={Staff} />
-                        <Route path="/sunday-schedule" render={() => 'sunday schedule'} />
+                        <Route path="/sundays" component={SundaySchedule} />
                         <Route path="/sunday-school" component={SundaySchool} />
                         <Route path="/values" component={Values} />
                     </div>
