@@ -57,6 +57,9 @@ class App extends Component {
                                     id="basic-nav"
                                     onMouseEnter={this.handleLearnMenuItemOpen}
                                     onMouseLeave={this.handleMenuItemClose}
+                                    onToggle={isOpen =>
+                                        isOpen ? this.handleLearnMenuItemOpen : this.handleMenuItemClose
+                                    }
                                     open={this.state.isLearnMenuItemOpen}
                                 >
                                     <MenuItem eventKey={1.1} href="/sermons">
@@ -78,6 +81,9 @@ class App extends Component {
                                     id="basic-nav"
                                     onMouseEnter={this.handleMinistriesMenuItemOpen}
                                     onMouseLeave={this.handleMenuItemClose}
+                                    onToggle={isOpen =>
+                                        isOpen ? this.handleMinistriesMenuItemOpen : this.handleMenuItemClose
+                                    }
                                     open={this.state.isMinistriesMenuItemOpen}
                                 >
                                     <MenuItem eventKey={4.1} href="/citizenship-class">
@@ -99,6 +105,9 @@ class App extends Component {
                                     id="basic-nav"
                                     onMouseEnter={this.handleAboutUsMenuItemOpen}
                                     onMouseLeave={this.handleMenuItemClose}
+                                    onToggle={isOpen =>
+                                        isOpen ? this.handleAboutUsMenuItemOpen : this.handleMenuItemClose
+                                    }
                                     open={this.state.isAboutUsMenuItemOpen}
                                 >
                                     <MenuItem eventKey={5.1} href="/values">
