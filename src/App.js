@@ -4,7 +4,7 @@ import { MenuItem, Nav, Navbar, NavDropdown, NavItem } from 'react-bootstrap';
 import 'font-awesome/css/font-awesome.min.css';
 import 'typeface-roboto';
 
-import ContactUs from './components/ContactUs';
+import ContactUsWrapper from './components/ContactUsWrapper';
 import Grow from './components/Grow';
 import Home from './components/Home';
 import Ministries from './components/Ministries';
@@ -74,9 +74,7 @@ class App extends Component {
                                 <NavItem eventKey={2} href="/grow" id="basic-nav">
                                     Grow
                                 </NavItem>
-                                <NavItem eventKey={3} href="/serve" id="basic-nav">
-                                    Serve
-                                </NavItem>
+                                {/* eventKey={3} is for "Serve" */}
                                 <NavItem eventKey={4} href="/ministries" id="basic-nav">
                                     Ministries
                                 </NavItem>
@@ -111,11 +109,10 @@ class App extends Component {
                 <Router>
                     <div className="content">
                         <Route exact path="/" component={Home} />
-                        <Route path="/contact-us" component={ContactUs} />
+                        <Route path="/contact-us" component={ContactUsWrapper} />
                         <Route path="/grow" component={Grow} />
                         <Route path="/ministries" component={Ministries} />
                         <Route path="/sermons" component={Sermons} />
-                        <Route path="/serve" render={() => 'serve'} />
                         <Route path="/staff" component={Staff} />
                         <Route path="/sundays" component={SundaySchedule} />
                         <Route path="/sunday-school" component={SundaySchool} />
