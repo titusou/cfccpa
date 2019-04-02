@@ -1,0 +1,41 @@
+.location-title-block {
+    margin: 40px 0;
+}
+
+.location-title {
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.location-address {
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.location-address:hover {
+    color: var(--cfcc-blue);
+    cursor: pointer;
+}
+
+.location-map-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.location-map {
+    border: 0;
+    height: 450px;
+    width: 600px;
+}
+
+@media (max-width: 575.98px) {
+    .location-map {
+        width: 100%;
+    }
+}
