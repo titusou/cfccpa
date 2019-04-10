@@ -34,6 +34,27 @@
     background-color: #f0f0f0;
 }
 
+.footer {
+    background-color: rgb(105, 158, 192);
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    padding: 60px 20px;
+}
+
+.footer .contact-box {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100px;
+}
+
+.footer .contact-icon-facebook,
+.footer .contact-icon-mailto,
+.footer .contact-icon-tel {
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+}
+
 .home,
 .sermons {
     display: flex;
