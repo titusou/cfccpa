@@ -7,11 +7,11 @@ import * as serviceWorker from './serviceWorker';
 
 const theme = createMuiTheme({
     shape: {
-        borderRadius: 0,
+        borderRadius: 0
     },
     typography: {
-        useNextVariants: true,
-    },
+        useNextVariants: true
+    }
 });
 
 ReactDOM.render(
