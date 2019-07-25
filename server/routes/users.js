@@ -21,6 +21,7 @@ router.post('/', function(req, res, next) {
         const user = users[i];
         if (user.username === reqBody.username && user.password === reqBody.password) {
             res.send('good id');
+            return;
         }
     }
     res.send('bad id');

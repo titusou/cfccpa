@@ -26,7 +26,7 @@ class Login extends Component {
         event.preventDefault();
 
         axios
-            .post('server/routes/users', {
+            .post('/users', {
                 username: this.state.username,
                 password: this.state.password
             })
