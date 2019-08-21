@@ -101,7 +101,7 @@
 
 .home-sermon-block {
     color: var(--cfcc-header-blue);
-    font-size: 48px;
+    font-size: 40px;
     font-weight: bold;
     margin-top: 20px;
     width: 100%;
@@ -110,6 +110,14 @@
 .home-sermon-actions {
     margin-top: 20px;
     width: 100%;
+}
+
+@media (max-width: 959px) {
+    .home-sermon-header,
+    .home-sermon-block,
+    .home-sermon-actions {
+        width: fit-content;
+    }
 }
 
 .home-sunday-school-title {
@@ -124,6 +132,7 @@
     color: lightsalmon;
     font-size: 40px;
     font-weight: 600;
+    margin-right: 10px;
 }
 
 .grow-header {
@@ -313,7 +322,7 @@
 }
 
 .sermon-video-header {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 800;
     margin: 40px 0 30px;
     text-align: center;

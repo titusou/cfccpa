@@ -13,8 +13,8 @@ class SermonVideo extends Component {
     render() {
         return (
             <div className="sermon-video-container">
-                <div className="sermon-video-header">全心全意愛你的家</div>
-                {this.renderVideo('79Du2JiK-JU')}
+                <div className="sermon-video-header">因我受造奇妙可畏</div>
+                {this.renderVideo('6BiE37SBY9Q')}
             </div>
         );
     }
