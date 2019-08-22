@@ -102,9 +102,9 @@ class App extends Component {
                                     <MenuItem eventKey={5.5} href="/contact-us">
                                         Contact Us
                                     </MenuItem>
-                                    <MenuItem eventKey={5.6} href="/login">
+                                    {/* <MenuItem eventKey={5.6} href="/login">
                                         Login
-                                    </MenuItem>
+                                    </MenuItem> */}
                                 </NavDropdown>
                             </Nav>
                         </Navbar.Collapse>

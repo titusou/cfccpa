@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Paper } from '@material-ui/core';
 
-import sundaySchoolApril from '../assets/sunday-school-april.png';
+import sundaySchool from '../assets/sunday-school.png';
 
 class SundaySchool extends Component {
     render() {
@@ -13,11 +13,7 @@ class SundaySchool extends Component {
                 <div className="sunday-school-flyer">
                     <div className="home-section">
                         <Paper className="home-theme-container" square>
-                            <img
-                                alt="Sunday School in April with Dr. Patrick Hunt"
-                                className="home-sunday-school-img"
-                                src={sundaySchoolApril}
-                            />
+                            <img alt="Sunday School" className="home-sunday-school-img" src={sundaySchool} />
                         </Paper>
                     </div>
                 </div>

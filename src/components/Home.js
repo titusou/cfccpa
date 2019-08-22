@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Button, Grid, Paper } from '@material-ui/core';
 import { PlayArrow } from '@material-ui/icons';
+import moment from 'moment';
 
 import Footer from './Footer';
-import sundaySchoolApril from '../assets/sunday-school-april.png';
+import sundaySchool from '../assets/sunday-school.png';
 import theme from '../assets/theme.png';
 
 class Home extends Component {
@@ -23,15 +24,14 @@ class Home extends Component {
                                 </Paper>
                             </div>
                         </Grid>
-                        <Grid item xs={12} sm={6}>
+                        <Grid item xs={12} md={6}>
                             <div className="home-section">
                                 <div className="home-sermon-header">
                                     Watch the latest sermon by{' '}
-                                    <span className="home-sermon-header-speaker">Steve Cheng</span>
+                                    <span className="home-sermon-header-speaker">Professor Lee</span>
                                 </div>
                                 <div className="home-sermon-block">
-                                    <div>全心全意</div>
-                                    <div>愛你的家</div>
+                                    <div>因我受造奇妙可畏</div>
                                 </div>
                                 <div className="home-sermon-actions">
                                     <Button href="/sermons" size="large" variant="outlined">
@@ -42,16 +42,13 @@ class Home extends Component {
                             </div>
                         </Grid>
                         <div className="home-sunday-school-title">
-                            <span className="home-sunday-school-title-month">April</span> Sunday School
+                            <span className="home-sunday-school-title-month">{moment().format('MMMM')}</span>
+                            Sunday School
                         </div>
                         <Grid item sm={6}>
                             <div className="home-section">
                                 <Paper square>
-                                    <img
-                                        alt="Sunday School in April with Dr. Patrick Hunt"
-                                        className="home-sunday-school-img"
-                                        src={sundaySchoolApril}
-                                    />
+                                    <img alt="Sunday School" className="home-sunday-school-img" src={sundaySchool} />
                                 </Paper>
                             </div>
                         </Grid>
