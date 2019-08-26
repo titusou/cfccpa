@@ -9,6 +9,10 @@
     margin-right: 5px;
 }
 
+.mt-15 {
+    margin-top: 15px;
+}
+
 .App {
     display: grid;
     grid-template-rows: var(--cfcc-header-height) 1fr;

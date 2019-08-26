@@ -72,6 +72,21 @@ class Grow extends Component {
                         'Evening Bible Reading',
                         'Finish off a long day by diving into the word of God. We get together regularly at 9:30 PM. Join us in our WeChat group at (650) 387-6112.'
                     )}
+                    {this.renderCard(
+                        'Stevenson House',
+                        <div>
+                            <div>
+                                Bible study at Stevenson senior-housing every Friday from 6:30 PM to 7:30 PM. You can
+                                find us in the basement floor of Building A.
+                            </div>
+                            <div className="mt-15" />
+                            <div>Address:</div>
+                            <div>455 E. Charleston Road</div>
+                            <div>Building A</div>
+                            <div>Palo Alto, CA 94306</div>
+                        </div>,
+                        [{ email: 'yichunsteve@cfccpaloalto.org', name: 'Elder Steve Cheng' }]
+                    )}
                 </div>
             </div>
         );
