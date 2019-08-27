@@ -1,25 +1,31 @@
 import React, { Component } from 'react';
-import { Grid, Paper } from '@material-ui/core';
+import { Paper } from '@material-ui/core';
 
 import citizenshipClass from '../assets/citizenship-class.jpg';
+import cookingClass from '../assets/cooking-class.png';
 import englishClass from '../assets/english-class.jpg';
+
+import './ministries.css';
 
 class Ministries extends Component {
     render() {
+        const flyers = [
+            { name: 'English Class', src: englishClass },
+            { name: 'Citizenship Class', src: citizenshipClass },
+            { name: 'Cooking Class', src: cookingClass },
+        ];
+
         return (
             <div className="ministry-flyers">
-                <Grid container spacing={24}>
-                    <Grid item xs={12} sm={6}>
-                        <Paper className="ministry-img-container" square>
-                            <img alt="Citizenship Class" className="ministry-img" src={citizenshipClass} />
+                {flyers.map((flyer, idx) => {
+                    const { name, src } = flyer || {};
+
+                    return (
+                        <Paper className="ministry-img-container" key={idx} square>
+                            <img alt={name} className="ministry-img" src={src} />
                         </Paper>
-                    </Grid>
-                    <Grid item xs={12} sm={6}>
-                        <Paper className="ministry-img-container" square>
-                            <img alt="English Class" className="ministry-img" src={englishClass} />
-                        </Paper>
-                    </Grid>
-                </Grid>
+                    );
+                })}
             </div>
         );
     }

@@ -1,0 +1,21 @@
+.ministry-flyers {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+.ministry-img-container {
+    height: fit-content;
+    margin: 15px;
+    width: calc((100% / 3) - 30px);
+}
+
+@media (max-width: 991px) {
+    .ministry-img-container {
+        width: 100%;
+    }
+}
+
+.ministry-img {
+    width: 100%;
+}
