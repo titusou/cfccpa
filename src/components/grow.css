@@ -1,0 +1,44 @@
+.grow-header {
+    color: white;
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    min-width: 320px;
+    padding: 30px;
+    width: 100%;
+}
+
+.grow-header-text-lg {
+    font-size: 56px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.grow-header-text-sm {
+    padding-left: 90px;
+    text-shadow: 0 0 1px gray;
+}
+
+.grow-header-text-keyword {
+    font-weight: bold;
+}
+
+.grow-title {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 60px 20px 0;
+}
+
+.grow .cfccpa-card {
+    height: fit-content;
+}
+
+.grow .bible-study .cfccpa-card {
+    min-height: 158px;
+}
+
+.grow .cfccpa-card-img {
+    height: unset;
+    object-fit: unset;
+    width: 100%;
+}

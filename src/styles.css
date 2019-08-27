@@ -139,31 +139,6 @@
     margin-right: 10px;
 }
 
-.grow-header {
-    color: white;
-    display: flex;
-    font-size: 24px;
-    justify-content: center;
-    min-width: 320px;
-    padding: 30px;
-    width: 100%;
-}
-
-.grow-header-text-lg {
-    font-size: 56px;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px black;
-}
-
-.grow-header-text-sm {
-    padding-left: 90px;
-    text-shadow: 0 0 1px gray;
-}
-
-.grow-header-text-keyword {
-    font-weight: bold;
-}
-
 .contact-us-wrapper-title-block {
     margin: 40px 0;
 }
@@ -229,7 +204,6 @@
     width: 100%;
 }
 
-.grow-header,
 .page-title-block-bg-default,
 .staff-title-block {
     background: var(--cfcc-blue); /* fallback for old browsers */
@@ -255,32 +229,32 @@
     text-shadow: rgba(0, 0, 0, 0.8) 1px 1px;
 }
 
-.grow-cards,
+.cfccpa-cards,
 .staff-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.grow-card,
+.cfccpa-card,
 .staff-card {
     margin: 20px;
     min-width: 300px;
     width: 350px;
 }
 
-.grow-card-img,
+.cfccpa-card-img,
 .staff-card-img {
     height: 180px;
     object-fit: cover;
 }
 
-.grow-card-name,
+.cfccpa-card-name,
 .staff-card-name {
     font-size: 20px;
 }
 
-.grow-card-description,
+.cfccpa-card-description,
 .staff-card-description {
     margin-top: 10px;
 }
@@ -288,12 +262,6 @@
 .staff-card-actions {
     display: flex;
     justify-content: center;
-}
-
-.grow-title {
-    font-size: 40px;
-    font-weight: 500;
-    margin: 60px 20px 0;
 }
 
 .sermon-video-container {
