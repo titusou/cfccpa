@@ -55,8 +55,11 @@ class App extends Component {
                         </Navbar.Header>
                         <Navbar.Collapse>
                             <Nav pullRight>
+                                <NavItem eventKey={1} href="/" id="basic-nav">
+                                    Home
+                                </NavItem>
                                 <NavDropdown
-                                    eventKey={1}
+                                    eventKey={2}
                                     title="Learn"
                                     id="basic-nav"
                                     onMouseEnter={this.handleLearnMenuItemOpen}
@@ -66,22 +69,22 @@ class App extends Component {
                                     }
                                     open={this.state.isLearnMenuItemOpen}
                                 >
-                                    <MenuItem eventKey={1.1} href="/sermons">
+                                    <MenuItem eventKey={2.1} href="/sermons">
                                         Sermons
                                     </MenuItem>
-                                    <MenuItem eventKey={1.2} href="/sunday-school">
+                                    <MenuItem eventKey={2.2} href="/sunday-school">
                                         Sunday School
                                     </MenuItem>
                                 </NavDropdown>
-                                <NavItem eventKey={2} href="/grow" id="basic-nav">
+                                <NavItem eventKey={3} href="/grow" id="basic-nav">
                                     Grow
                                 </NavItem>
-                                {/* eventKey={3} is for "Serve" */}
-                                <NavItem eventKey={4} href="/ministries" id="basic-nav">
+                                {/* eventKey={4} is for "Serve" */}
+                                <NavItem eventKey={5} href="/ministries" id="basic-nav">
                                     Ministries
                                 </NavItem>
                                 <NavDropdown
-                                    eventKey={5}
+                                    eventKey={6}
                                     title="About Us"
                                     id="basic-nav"
                                     onMouseEnter={this.handleAboutUsMenuItemOpen}
@@ -91,19 +94,19 @@ class App extends Component {
                                     }
                                     open={this.state.isAboutUsMenuItemOpen}
                                 >
-                                    <MenuItem eventKey={5.1} href="/values">
+                                    <MenuItem eventKey={6.1} href="/values">
                                         Values
                                     </MenuItem>
-                                    <MenuItem eventKey={5.3} href="/sundays">
+                                    <MenuItem eventKey={6.2} href="/sundays">
                                         Sundays
                                     </MenuItem>
-                                    <MenuItem eventKey={5.4} href="/staff">
+                                    <MenuItem eventKey={6.3} href="/staff">
                                         Staff
                                     </MenuItem>
-                                    <MenuItem eventKey={5.5} href="/contact-us">
+                                    <MenuItem eventKey={6.4} href="/contact-us">
                                         Contact Us
                                     </MenuItem>
-                                    {/* <MenuItem eventKey={5.6} href="/login">
+                                    {/* <MenuItem eventKey={6.5} href="/login">
                                         Login
                                     </MenuItem> */}
                                 </NavDropdown>
