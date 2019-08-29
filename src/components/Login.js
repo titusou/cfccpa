@@ -1,6 +1,7 @@
+import axios from 'axios';
 import React, { Component } from 'react';
 import { Button, FormGroup, FormControl, ControlLabel } from 'react-bootstrap';
-import axios from 'axios';
+import { withRouter } from 'react-router';
 
 class Login extends Component {
     constructor(props) {
@@ -8,7 +9,7 @@ class Login extends Component {
 
         this.state = {
             username: '',
-            password: ''
+            password: '',
         };
     }
 
@@ -18,7 +19,7 @@ class Login extends Component {
 
     handleChange = event => {
         this.setState({
-            [event.target.id]: event.target.value
+            [event.target.id]: event.target.value,
         });
     };
 
@@ -26,14 +27,15 @@ class Login extends Component {
         event.preventDefault();
 
         axios
-            .post('/users', {
+            .post('http://localhost:3001/users', {
                 username: this.state.username,
-                password: this.state.password
+                password: this.state.password,
             })
-            .then(function(response) {
+            .then(response => {
+                this.props.history.push('/dashboard');
                 console.log(response);
             })
-            .catch(function(error) {
+            .catch(error => {
                 console.log(error);
             });
 
@@ -67,4 +69,4 @@ class Login extends Component {
     }
 }
 
-export default Login;
+export default withRouter(Login);
