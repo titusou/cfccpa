@@ -5,6 +5,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import 'typeface-roboto';
 
 import ContactUsWrapper from './components/ContactUsWrapper';
+import Dashboard from './components/Dashboard';
 import Grow from './components/Grow';
 import Home from './components/Home';
 import Login from './components/Login';
@@ -114,6 +115,7 @@ class App extends Component {
                     <div className="content">
                         <Route exact path="/" component={Home} />
                         <Route path="/contact-us" component={ContactUsWrapper} />
+                        <Route path="/dashboard" component={Dashboard} />
                         <Route path="/grow" component={Grow} />
                         <Route path="/login" component={Login} />
                         <Route path="/ministries" component={Ministries} />

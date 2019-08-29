@@ -24,7 +24,7 @@ router.post('/', function(req, res, next) {
             return;
         }
     }
-    res.send('bad id');
+    res.status(401).send('Incorrect username or password');
 });
 
 module.exports = router;
