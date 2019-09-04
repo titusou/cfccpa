@@ -55,7 +55,7 @@ class Staff extends Component {
                         johhZhou,
                         'zhouhouen@gmail.com',
                         null,
-                        'Houen began interning during the early days of CFCCPA, while studying at Overseas Theological Seminary. Upon graduating in 2017, Houen made a decision to commit himself to full-time ministry in the same community he had grown to love when he first started.'
+                        'Houen began interning during the early days of CFCCPA, while studying at Overseas Theological Seminary. Upon graduating in 2017, Houen made a decision to commit himself to full-time ministry in the same community he has grown to love when he first started.'
                     )}
                 </div>
             </div>
