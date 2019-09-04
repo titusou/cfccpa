@@ -1,0 +1,10 @@
+.staff-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.staff-card-actions {
+    display: flex;
+    justify-content: center;
+}
