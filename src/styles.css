@@ -229,39 +229,29 @@
     text-shadow: rgba(0, 0, 0, 0.8) 1px 1px;
 }
 
-.cfccpa-cards,
-.staff-cards {
+.cfccpa-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.cfccpa-card,
-.staff-card {
+.cfccpa-card {
     margin: 20px;
     min-width: 300px;
     width: 350px;
 }
 
-.cfccpa-card-img,
-.staff-card-img {
+.cfccpa-card-img {
     height: 180px;
     object-fit: cover;
 }
 
-.cfccpa-card-name,
-.staff-card-name {
+.cfccpa-card-name {
     font-size: 20px;
 }
 
-.cfccpa-card-description,
-.staff-card-description {
+.cfccpa-card-description {
     margin-top: 10px;
-}
-
-.staff-card-actions {
-    display: flex;
-    justify-content: center;
 }
 
 .sermon-video-container {
