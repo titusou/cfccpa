@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { Button, Grid, Paper } from '@material-ui/core';
 import { PlayArrow } from '@material-ui/icons';
-import moment from 'moment';
 
 import Footer from './Footer';
-import heraldChoir from '../assets/herald-choir.jpg';
 import sundaySchool from '../assets/sunday-school.png';
 import theme from '../assets/theme.png';
 
@@ -14,17 +12,6 @@ class Home extends Component {
             <div>
                 <div className="home">
                     <Grid alignItems="center" className="home-grid" container justify="center" spacing={24}>
-                        <Grid item xs={12} sm={6}>
-                            <div className="home-section">
-                                <Paper className="home-theme-container" square>
-                                    <img
-                                        alt="Herald Choir: A Christmas Festival 2019"
-                                        className="home-theme-img"
-                                        src={heraldChoir}
-                                    />
-                                </Paper>
-                            </div>
-                        </Grid>
                         <Grid item xs={12} sm={6}>
                             <div className="home-section">
                                 <Paper className="home-theme-container" square>
@@ -54,7 +41,7 @@ class Home extends Component {
                             </div>
                         </Grid>
                         <div className="home-sunday-school-title">
-                            <span className="home-sunday-school-title-month">{moment().format('MMMM')}</span>
+                            <span className="home-sunday-school-title-month">January</span>
                             Sunday School
                         </div>
                         <Grid item sm={6}>
