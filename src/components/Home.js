@@ -4,7 +4,7 @@ import { PlayArrow } from '@material-ui/icons';
 
 import Footer from './Footer';
 import sundaySchool from '../assets/sunday-school.png';
-import theme from '../assets/theme.png';
+import theme from '../assets/theme.jpg';
 
 class Home extends Component {
     render() {
