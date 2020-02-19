@@ -3,7 +3,7 @@ import { Button, Grid, Paper } from '@material-ui/core';
 import { PlayArrow } from '@material-ui/icons';
 
 import Footer from './Footer';
-import sundaySchool from '../assets/sunday-school.png';
+import sundaySchool from '../assets/sunday-school.jpg';
 import theme from '../assets/theme.jpg';
 
 class Home extends Component {
@@ -41,7 +41,7 @@ class Home extends Component {
                             </div>
                         </Grid>
                         <div className="home-sunday-school-title">
-                            <span className="home-sunday-school-title-month">January</span>
+                            <span className="home-sunday-school-title-month">February & March</span>
                             Sunday School
                         </div>
                         <Grid item sm={6}>

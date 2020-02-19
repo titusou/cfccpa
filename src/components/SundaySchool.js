@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Paper } from '@material-ui/core';
 
-import sundaySchool from '../assets/sunday-school.png';
-import sundaySchoolChildren from '../assets/sunday-school-children.png';
+import sundaySchool from '../assets/sunday-school.jpg';
 
 import './sundayschool.css';
 
@@ -10,7 +9,6 @@ class SundaySchool extends Component {
     render() {
         const flyers = [
             { name: 'Sunday School', src: sundaySchool },
-            { name: `Sunday School for Children`, src: sundaySchoolChildren },
         ];
 
         return (
