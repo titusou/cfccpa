@@ -1,6 +1,7 @@
 .sunday-school-flyers {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 60px 60px 15px;
 }
 
