@@ -3,7 +3,7 @@ import { Button, Grid, Paper } from '@material-ui/core';
 import { PlayArrow } from '@material-ui/icons';
 
 import Footer from './Footer';
-import sundaySchool from '../assets/sunday-school.jpg';
+import prayerMeeting from '../assets/prayer-meeting.png';
 import theme from '../assets/theme.jpg';
 
 class Home extends Component {
@@ -40,14 +40,13 @@ class Home extends Component {
                                 </div>
                             </div>
                         </Grid>
-                        <div className="home-sunday-school-title">
-                            <span className="home-sunday-school-title-month">February & March</span>
-                            Sunday School
+                        <div className="home-prayer-meeting-title">
+                            JOIN US FOR PRAYER MEETINGS ON ZOOM
                         </div>
                         <Grid item sm={6}>
                             <div className="home-section">
                                 <Paper square>
-                                    <img alt="Sunday School" className="home-sunday-school-img" src={sundaySchool} />
+                                    <img alt="Prayer Meeting" className="home-theme-img" src={prayerMeeting} />
                                 </Paper>
                             </div>
                         </Grid>

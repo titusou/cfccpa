@@ -9,6 +9,10 @@
     margin-right: 5px;
 }
 
+.mt-10 {
+    margin-top: 10px;
+}
+
 .mt-15 {
     margin-top: 15px;
 }
@@ -31,6 +35,7 @@
 .navbar #basic-nav,
 .navbar #basic-nav-dropdown {
     color: black;
+    min-width: 65px;
 }
 
 .navbar #basic-nav:hover,
@@ -122,6 +127,14 @@
     .home-sermon-actions {
         width: fit-content;
     }
+}
+
+.home-prayer-meeting-title {
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
 }
 
 .home-sunday-school-title {
@@ -241,6 +254,10 @@
     width: 350px;
 }
 
+.give .cfccpa-card {
+    width: 375px;
+}
+
 .cfccpa-card-img {
     height: 180px;
     object-fit: cover;
@@ -252,6 +269,30 @@
 
 .cfccpa-card-description {
     margin-top: 10px;
+}
+
+.cfccpa-card-description-centered {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.give-header {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 50px 20px 0;
+    text-align: center;
+}
+
+.give-subheader {
+    color: gray;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 500;
+    margin: 10px 20px 40px;
+    text-align: center;
 }
 
 .sermon-video-container {

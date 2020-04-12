@@ -55,7 +55,7 @@ class Grow extends Component {
                     </Card>
                     {this.renderCard(
                         'Manna',
-                        'A fellowship group for young adults. We meet every other Sunday at 1:30 PM.',
+                        'A fellowship group for young adults. We meet every other Sunday afternoon.',
                         [
                             { email: 'linyingcui@gmail.com', name: 'Linying Cui' },
                             { email: 'rjchow@gmail.com', name: 'Rosie Chow' },
