@@ -6,6 +6,7 @@ import 'typeface-roboto';
 
 import ContactUsWrapper from './components/ContactUsWrapper';
 import Dashboard from './components/Dashboard';
+import Give from './components/Give';
 import Grow from './components/Grow';
 import Home from './components/Home';
 import Login from './components/Login';
@@ -110,6 +111,9 @@ class App extends Component {
                                         Login
                                     </MenuItem> */}
                                 </NavDropdown>
+                                <NavItem eventKey={7} href="/give" id="basic-nav">
+                                    Give
+                                </NavItem>
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>
@@ -119,6 +123,7 @@ class App extends Component {
                         <Route exact path="/" component={Home} />
                         <Route path="/contact-us" component={ContactUsWrapper} />
                         <Route path="/dashboard" component={Dashboard} />
+                        <Route path="/give" component={Give} />
                         <Route path="/grow" component={Grow} />
                         <Route path="/login" component={Login} />
                         <Route path="/ministries" component={Ministries} />
