@@ -17,7 +17,7 @@ class Location extends Component {
         return (
             <div className={addressClassName || 'location-address'} onClick={() => window.open(this.mapUrl)}>
                 <div>4000 Middlefield Rd</div>
-                <div>Building I</div>
+                <div>Building U7</div>
                 <div>Palo Alto, CA 94303</div>
             </div>
         );

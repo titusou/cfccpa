@@ -37,9 +37,8 @@ class Give extends Component {
                             <div className="cfccpa-card-description">Checks should be made out to "Community for Christ Church of Palo Alto". Donations can be deposited in person into any of our offering boxes or mailed to:</div>
                             <div className="cfccpa-card-description-centered mt-10">
                                 <div>Community for Christ Church of Palo Alto</div>
-                                <div>4000 Middlefield Rd</div>
-                                <div>Building I</div>
-                                <div>Palo Alto, CA 94303</div>
+                                <div>PO Box 60010</div>
+                                <div>Palo Alto, CA 94306</div>
                             </div>
                         </CardContent>
                     </Card>

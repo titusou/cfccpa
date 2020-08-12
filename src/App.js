@@ -59,7 +59,7 @@ class App extends Component {
                                 <NavItem eventKey={1} href="/" id="basic-nav">
                                     Home
                                 </NavItem>
-                                <NavDropdown
+                                {/* <NavDropdown
                                     eventKey={2}
                                     title="Learn"
                                     id="basic-nav"
@@ -76,14 +76,14 @@ class App extends Component {
                                     <MenuItem eventKey={2.2} href="/sunday-school">
                                         Sunday School
                                     </MenuItem>
-                                </NavDropdown>
+                                </NavDropdown> */}
                                 <NavItem eventKey={3} href="/grow" id="basic-nav">
                                     Grow
                                 </NavItem>
                                 {/* eventKey={4} is for "Serve" */}
-                                <NavItem eventKey={5} href="/ministries" id="basic-nav">
+                                {/* <NavItem eventKey={5} href="/ministries" id="basic-nav">
                                     Ministries
-                                </NavItem>
+                                </NavItem> */}
                                 <NavDropdown
                                     eventKey={6}
                                     title="About Us"
